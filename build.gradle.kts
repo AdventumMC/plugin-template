@@ -8,6 +8,7 @@ plugins {
     java
     kotlin("jvm") version "1.4-M1"
     id("net.minecrell.plugin-yml.bukkit") version "0.3.0"
+    id("com.github.johnrengelman.shadow") version "5.2.0"
 }
 
 group = Plugin.GROUP
@@ -18,12 +19,15 @@ repositories {
     maven(Repositories.KOTLINX)
     maven(Repositories.SPIGOT)
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
-    implementation(Dependencies.BUKKIT)
-    implementation(Dependencies.COROUTINES)
+    compileOnly(kotlin("stdlib-jdk8"))
+    compileOnly(Dependencies.BUKKIT)
+    compileOnly(Dependencies.COROUTINES)
+    compileOnly(Dependencies.REQUERY)
+    compileOnly(Dependencies.REQUERY_KOTLIN)
 }
 
 configure<JavaPluginConvention> {
