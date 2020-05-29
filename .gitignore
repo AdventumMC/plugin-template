@@ -1,0 +1,14 @@
+/*
+!build.gradle.kts
+!settings.gradle.kts
+!gradlew
+!gradlew.bat
+!gradle.properties
+!src
+!gradle
+!README.md
+!.gitignore
+!buildSrc
+# Project exclude paths
+/buildSrc/.gradle/
+/buildSrc/build/
