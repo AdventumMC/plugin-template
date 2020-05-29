@@ -28,6 +28,7 @@ dependencies {
     compileOnly(Dependencies.COROUTINES)
     compileOnly(Dependencies.REQUERY)
     compileOnly(Dependencies.REQUERY_KOTLIN)
+    compileOnly(Dependencies.HIKARI)
 }
 
 configure<JavaPluginConvention> {

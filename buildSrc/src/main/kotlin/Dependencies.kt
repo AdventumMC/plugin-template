@@ -24,4 +24,9 @@ object Dependencies {
      */
     const val REQUERY_KOTLIN = "io.requery:requery-kotlin:1.6.1"
 
+    /**
+     * HikariCP
+     */
+    const val HIKARI         = "com.zaxxer:HikariCP:3.4.5"
+
 }
